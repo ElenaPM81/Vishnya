@@ -10,7 +10,9 @@
       --accent: #a4002b;
     }
 
-    * { box-sizing: border-box; }
+    * { 
+      box-sizing: border-box;
+     }
 
     html, body {
       margin: 0;
@@ -18,8 +20,16 @@
       font-family: Arial, "Segoe UI", Roboto, sans-serif;
       color: var(--text);
       background: var(--bg);
+
+
     }
 
+   header .logo {
+    
+
+     
+    
+    }
     header {
       background: #fff;
       border-bottom: 1px solid var(--border);
@@ -27,9 +37,7 @@
       text-align: center;
       position: relative;
     }
-    .logo {
-    
-    }
+ 
 
     /* лозунг под названием магазина */
     .banner {
