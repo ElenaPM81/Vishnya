@@ -1,0 +1,304 @@
+ :root {
+      --bg: #ffe3ec;          /* нежно розовый фон страницы */
+      --card: #ffffff;
+      --text: #2b2b2b;
+      --muted: #6b5151;
+      --brand: #7a001a;        /* бордовый цвет */
+      --brand-dark: #5a0010;
+      --border: #e5cbdc;
+      --shadow: 0 2px 8px rgba(0,0,0,.05);
+      --accent: #a4002b;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+    
+    }
+
+    /* лозунг под названием магазина */
+    .banner {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+      opacity: 0.95;
+    }
+
+    /* стиль заголовка "Вишня" как бордовый крупный текст */
+    header h1 {
+      margin: 0;
+      font-size: 64px;
+      color: var(--brand);
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* объявление/лозунг под названием */
+    .announcement {
+      margin-top: 8px;
+      display: inline-block;
+      padding: 8px 14px;
+      background: #fff3f3;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--brand);
+      font-size: 14px;
+    }
+
+    /* основная сетка: лево-центр-право */
+    .container {
+      display: grid;
+      grid-template-columns: 260px 1fr 260px;
+      gap: 20px;
+      width: min(1200px, 92%);
+      margin: 24px auto;
+    }
+
+    /* левое меню (содержание) */
+    nav.left {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+      min-height: 420px;
+    }
+
+    nav.left h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: var(--brand-dark);
+    }
+
+    nav.left ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+
+    nav.left li {
+      margin: 8px 0;
+    }
+
+    nav.left a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* правое меню: полезные ссылки + интерактивные элементы */
+    nav.right {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+      min-height: 420px;
+    }
+
+    nav.right h3 {
+      margin-top: 0;
+      font-size: 16px;
+      color: var(--brand-dark);
+    }
+
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section h4 {
+      margin: 0 0 6px;
+      font-size: 14px;
+      color: var(--brand);
+    }
+
+    .inline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel {
+      background: #f8f8f8;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    /* корзина со счетчиком + калькулятор + календарь + счетчик калорий */
+    .widget {
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .widget h4 {
+      margin: 0 0 8px;
+      font-size: 14px;
+      color: var(--brand-dark);
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 6px 0;
+      gap: 8px;
+    }
+
+    .count {
+      font-weight: 700;
+      color: var(--brand);
+      font-size: 18px;
+      width: 40px;
+      text-align: center;
+      border-bottom: 2px solid var(--brand);
+    }
+
+    .btn {
+      padding: 8px 10px;
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn.secondary {
+      background: #eee;
+      color: #333;
+    }
+
+    /* центр: карточки товаров */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-content: start;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #f5f5f5;
+    }
+
+    .card h4 {
+      margin: 10px 0 6px;
+      font-size: 16px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #555;
+      font-size: 13px;
+      flex-grow: 1;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--brand);
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    .card .cart {
+      margin-top: 8px;
+      padding: 8px 10px;
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* футер */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      border-top: 1px solid var(--border);
+      background: #fff;
+      margin-top: 20px;
+    }
+
+    .social {
+      display: inline-flex;
+      gap: 12px;
+      padding: 8px 0;
+    }
+
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #f1f1f1;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    hr.sep {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 12px 0;
+    }
+
+    /* адаптивность: одна колонка на узких экранах */
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      nav.left, nav.right {
+        order: 0;
+        width: 100%;
+      }
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 48px; }
+      .cards { grid-template-columns: 1fr; }
+    }

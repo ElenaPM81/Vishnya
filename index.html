@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Вишня — магазин продуктов</title>
+
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo\Screenshot_1.png" alt="">
+  </div>
+  <h1>Вишня</h1>
+  <p>Добро пожаловать в наш магазин свежих продуктов — качество и забота о вашем столе.</p>
+
+  <div class="banner" aria-label="Объявление">
+    <span class="announcement">Приглашаем в магазин: свежие товары каждый день!</span>
+  </div>
+</header>
+
+<main class="container" aria-label="Основной контент страницы">
+
+  <!-- слева: содержание и статьи -->
+  <nav class="left" aria-label="Содержание и статьи">
+    <h3>Каталог</h3>
+    <ul>
+      <li>
+      <li><a href="#fruits">Фрукты</a></li>
+      <li><a href="#vegetables">Овощи</a></li>
+      <li><a href="#dairy">Молочное</a></li>
+      <li><a href="#grains">Крупы</a></li>
+    </ul>
+    <hr class="sep" />
+    <h3>Полезные статьи</h3>
+    <ul>
+      <li><a href="#">Как выбрать свежие продукты</a></li>
+      <li><a href="#">Секреты хранения фруктов и овощей</a></li>
+      <li><a href="#">Питательные свойства продуктов</a></li>
+      <li><a href="#">Польза мяса и молочных продуктов</a></li>
+    </ul>
+  </nav>
+
+  <!-- центр: карточки товаров -->
+  <section class="cards" id="akcii" aria-label="Карточки товаров">
+    <!-- Примерно 15 карточек (повторяющиеся данные) -->
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa1/600/400" alt="Яблоки">
+      <h4>Свежие яблоки</h4>
+      <p>Сочные яблоки сорта: семейка. Упаковка 1 кг.</p>
+      <div class="price">299 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Свежие яблоки')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa2/600/400" alt="Бананы">
+      <h4>Бананы</h4>
+      <p>Спелые бананы, 1 кг.</p>
+      <div class="price">180 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Бананы')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa3/600/400" alt="Молоко 2.5%">
+      <h4>Молоко 2.5%</h4>
+      <p>Пастеризованное молоко 1 л.</p>
+      <div class="price">120 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Молоко 2.5%')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa4/600/400" alt="Хлеб ржаной">
+      <h4>Хлеб ржаной</h4>
+      <p>Хлеб на закваске 600 г, ароматный.</p>
+      <div class="price">85 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Хлеб ржаной')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa5/600/400" alt="Куриное филе">
+      <h4>Куриное филе</h4>
+      <p>Филе охлажденное, без кожи, 1 кг.</p>
+      <div class="price">420 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Куриное филе')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa6/600/400" alt="Яйца 10 шт">
+      <h4>Яйца 10 шт</h4>
+      <p>Класс А, свежие яйца.</p>
+      <div class="price">70 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Яйца 10 шт')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa7/600/400" alt="Томат черри">
+      <h4>Томат черри</h4>
+      <p>Маленькие сладкие помидоры.</p>
+      <div class="price">230 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Томат черри')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa8/600/400" alt="Йогурт натуральный">
+      <h4>Йогурт натуральный</h4>
+      <p>Без добавок, 400 г.</p>
+      <div class="price">95 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Йогурт натуральный')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa9/600/400" alt="Сыр голландский">
+      <h4>Сыр голландский</h4>
+      <p>Твердый сыр, нарезанный 200 г.</p>
+      <div class="price">160 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Сыр голландский')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa10/600/400" alt="Огурцы свежие">
+      <h4>Огурцы свежие</h4>
+      <p>Свежие огурцы, 2 шт.</p>
+      <div class="price">99 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Огурцы свежие')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa11/600/400" alt="Сок апельсиновый">
+      <h4>Сок апельсиновый</h4>
+      <p>Натуральный сок 1 л.</p>
+      <div class="price">120 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Сок апельсиновый')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa12/600/400" alt="Картофель белый">
+      <h4>Картофель белый</h4>
+      <p>2 кг сортовой.</p>
+      <div class="price">180 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Картофель')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa13/600/400" alt="Груши">
+      <h4>Груши</h4>
+      <p>Сочные и сладкие, 1 кг.</p>
+      <div class="price">210 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Груши')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa14/600/400" alt="Кефир 2.5%">
+      <h4>Кефир 2.5%</h4>
+      <p>Живой кефир, 1 л.</p>
+      <div class="price">110 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Кефир 2.5%')">В корзину</button>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/seed/isa15/600/400" alt="Морковь">
+      <h4>Морковь</h4>
+      <p>Свежая морковь, 1 кг.</p>
+      <div class="price">70 ₽</div>
+      <button class="cart" onclick="alert('Добавлено в корзину: Морковь')">В корзину</button>
+    </article>
+  </section>
+
+  <!-- справа: полезные ссылки + интерактив -->
+  <aside class="right" aria-label="Полезные ссылки и интерактивные модули">
+    <h3>Полезные ссылки</h3>
+
+    <div class="section" aria-label="Ссылки">
+      <h4>Полезные ресурсы</h4>
+      <ul>
+        <li><a href="#">Как заказать</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Политика возврата</a></li>
+        <li><a href="#">Акции и скидки</a></li>
+      </ul>
+    </div>
+
+    <!-- корзина со счетчиком -->
+    <div class="widget" id="cart" aria-label="Корзина">
+      <h4>Корзина</h4>
+      <div class="row">
+        <span>Товаров</span>
+        <span class="count" id="cartCount">0</span>
+      </div>
+      <button class="btn" onclick="increaseCart()">Добавить случайно</button>
+    </div>
+
+    <!-- калькулятор -->
+    <div class="widget" aria-label="Калькулятор калорий">
+      <h4>Калькулятор калорий</h4>
+      <div class="row">
+        <input id="calInput" type="number" min="0" value="200" style="width: 100px; padding:6px;" />
+        <button class="btn" onclick="calcCalories()">Расчитать</button>
+      </div>
+      <div id="calResult" style="margin-top:8px; font-size:14px; color:#333;"></div>
+    </div>
+
+    <!-- календарь -->
+    <div class="widget" aria-label="Календарь">
+      <h4>Календарь питания</h4>
+      <input type="date" id="datePicker" style="width:100%; padding:6px;" />
+      <div style="margin-top:8px; font-size:13px; color:#555;">Выберите дату для планирования меню</div>
+    </div>
+  </aside>
+
+</main>
+
+<footer aria-label="Футер">
+  <div>Свяжитесь с нами в мессенджерах:</div>
+  <div class="social" aria-label="Социальные сети">
+    <a href="#" title="WhatsApp" aria-label="WhatsApp">WA</a>
+    <a href="#" title="Viber" aria-label="Viber">VB</a>
+    <a href="#" title="Telegram" aria-label="Telegram">TG</a>
+    <a href="#" title="VK" aria-label="VKontakte">VK</a>
+  </div>
+  <div style="margin-top:6px; font-size:12px; color:#888;">
+    © 2025 Вишня. Все права защищены.
+  </div>
+</footer>
+
+<script>
+  // простой счетчик корзины
+  let cart = 0;
+  function increaseCart() {
+    cart++;
+    document.getElementById('cartCount').textContent = cart;
+  }
+
+  // простой калькулятор калорий: метро-подстановочный пример
+  function calcCalories() {
+    const c = parseInt(document.getElementById('calInput').value || '0', 10);
+    // очень упрощенная "формула": умножение на некую константу
+    const result = Math.round(c * 1.1);
+    document.getElementById('calResult').textContent = 'Пример калорий: ' + result + ' ккал';
+  }
+</script>
+
+</body>
+</html>
